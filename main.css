@@ -1,0 +1,21 @@
+@import "components-css/_circles.css";
+@import "components-css/_circle1.css";
+@import "components-css/_circle2.css";
+@import "components-css/_buttons.css";
+
+:root {
+  --dark-color: #071952;
+  --dark-teal: #0b666a;
+  --teal: #35a29f;
+  --light-teal: #97feed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 50px;
+}
