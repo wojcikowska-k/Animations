@@ -1,0 +1,245 @@
+.circles {
+  padding: 50px;
+  background-color: #071952;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-teal);
+  border-radius: 50%;
+  border: 5px solid var(--teal);
+  border-top: 5px solid var(--light-teal);
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: rotate(180deg);
+  transition: 250ms ease-in-out;
+  position: relative;
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.small-circle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  transition: 500ms ease-in-out;
+  transform: translatex(0%) translatey(-10%);
+}
+
+.smallest-circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  transform: translatex(300%) translatey(-280%);
+  transition: 500ms ease-in-out;
+}
+
+.circle:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.circle:hover.circle {
+  border-top: 5px solid var(--teal);
+}
+
+.circle:hover .small-circle {
+  transform: translatex(32%) translatey(32%);
+}
+
+.circle:hover .smallest-circle {
+  transform: translatex(200%) translatey(-100%);
+}
+
+.circle2 {
+  width: 53px;
+  height: 53px;
+  background-color: var(--light-teal);
+  border-radius: 50%;
+  animation-name: spin2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.small-circle2 {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-teal);
+  border-radius: 50%;
+  transition: 500ms ease-in-out;
+}
+
+@keyframes spin2 {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.circle2:hover {
+  cursor: pointer;
+}
+
+.circle2:hover .small-circle2 {
+  cursor: pointer;
+  transform: scale(0.5);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Button1 */
+.button1 {
+  color: var(--dark-color);
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid var(--dark-color);
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.button1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--light-teal);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom right;
+  transform: rotate(90deg);
+  transition: transform 1s;
+}
+
+.button1:hover:before {
+  transform: rotate(0deg);
+}
+
+/* Button2 */
+.button2 {
+  color: var(--dark-color);
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid var(--dark-color);
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--dark-color);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.button2:hover:before {
+  transform: translateY(0);
+}
+
+.button2:hover {
+  color: white;
+  transform: translateY(0);
+}
+
+/* Button3 */
+.button3 {
+  color: var(--dark-color);
+  font-family: sans-serif;
+  font-size: 45px;
+  border: 5px solid var(--dark-color);
+  padding: 40px 80px;
+  position: relative;
+  transition: 1s;
+}
+
+.button3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--dark-color);
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+
+.button3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--dark-color);
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+
+.button3:hover:before {
+  transform: rotateX(0);
+}
+
+.button3:hover:after {
+  transform: rotateY(0);
+}
+
+.button3:hover {
+  transform: rotateX(0);
+  color: white;
+}
+
+:root {
+  --dark-color: #071952;
+  --dark-teal: #0b666a;
+  --teal: #35a29f;
+  --light-teal: #97feed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 50px;
+}/*# sourceMappingURL=main.css.map */
