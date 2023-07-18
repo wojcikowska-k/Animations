@@ -8,12 +8,17 @@
   --dark-teal: #0b666a;
   --teal: #35a29f;
   --light-teal: #97feed;
+  --red: #f44336;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-teal);
 }
 
 .container {
