@@ -1,14 +1,13 @@
 .button9 {
   border: 1px solid var(--red);
-  background: none;
+  // background: none;
   color: var(--red);
+  font-family: sans-serif;
   padding: 40px 80px;
   font-size: 45px;
   text-transform: uppercase;
-  cursor: pointer;
   transition: all 0.5s;
   position: relative;
-  color: var(--red);
   overflow: hidden;
 }
 .button9:before {
