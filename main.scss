@@ -14,6 +14,9 @@
 @import "components-css/_button10.scss";
 @import "components-css/_button11.scss";
 @import "components-css/_button12.scss";
+@import "components-css/_button13.scss";
+@import "components-css/_button14.scss";
+@import "components-css/_button15.scss";
 
 :root {
   --dark-color: #071952;
@@ -27,6 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
