@@ -109,6 +109,7 @@
 }
 
 .buttons {
+  background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -116,7 +117,7 @@
   padding: 60px;
   gap: 40px;
   flex-wrap: wrap;
-  background-color: white;
+  width: 100%;
   z-index: 1;
 }
 .buttons__dark {
@@ -625,7 +626,7 @@ a {
 }
 
 .button12:hover {
-  color: var(--light-teal);
+  color: white;
   transition-delay: 0.4s;
   transform: scale(1);
 }
@@ -702,6 +703,7 @@ a {
 
 .button14:hover {
   color: var(--dark-color);
+  z-index: 0;
 }
 
 .button14:after,
@@ -977,12 +979,113 @@ a {
   bottom: 0;
 }
 
+.button18:hover {
+  cursor: pointer;
+}
+
+.button19 {
+  padding: 28px 55px;
+  color: var(--blue);
+  font-size: 32px;
+  letter-spacing: 3px;
+  border: 2px solid var(--blue);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.button19:hover {
+  color: white;
+}
+
+.button19:hover .div19 {
+  top: 0;
+}
+
+.div19 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: var(--blue);
+  transition: all 1s;
+  z-index: -1;
+}
+
+.div19:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(images/wave.png);
+  animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
+}
+.button20 {
+  width: 160px;
+  height: 60px;
+  color: var(--dark-color);
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+
+.span20 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid var(--dark-color);
+  z-index: -1;
+}
+
+.span20:before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.button20:hover .span20:before {
+  width: 100%;
+  background-color: var(--dark-color);
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.button20:hover {
+  color: white;
+}
+
 :root {
   --dark-color: #071952;
   --dark-teal: #0b666a;
   --teal: #35a29f;
   --light-teal: #97feed;
   --red: #f44336;
+  --blue: #00aeff;
 }
 
 * {
@@ -998,4 +1101,12 @@ body {
 
 .container {
   margin: 0 50px;
+}
+.container__btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

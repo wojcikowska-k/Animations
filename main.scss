@@ -20,6 +20,8 @@
 @import "components-css/_button16.scss";
 @import "components-css/_button17.scss";
 @import "components-css/_button18.scss";
+@import "components-css/_button19.scss";
+@import "components-css/_button20.scss";
 
 :root {
   --dark-color: #071952;
@@ -27,6 +29,7 @@
   --teal: #35a29f;
   --light-teal: #97feed;
   --red: #f44336;
+  --blue: #00aeff;
 }
 
 * {
@@ -42,4 +45,13 @@ body {
 
 .container {
   margin: 0 50px;
+
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
