@@ -42,15 +42,15 @@
   cursor: pointer;
 }
 .circle:hover.circle {
-  border-top: 5px solid var(--red);
-  border-color: var(--red);
+  border-top: 5px solid var(--dark-color);
+  border-color: var(--dark-color);
   background-color: white;
 }
 .circle:hover .small-circle {
   transform: translatex(32%) translatey(32%);
-  background-color: var(--red);
+  background-color: var(--dark-color);
 }
 .circle:hover .smallest-circle {
   transform: translatex(200%) translatey(-100%);
-  background-color: var(--red);
+  background-color: var(--dark-color);
 }

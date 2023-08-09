@@ -9,10 +9,15 @@
   gap: 40px;
   flex-wrap: wrap;
   width: 100%;
+
+  position: relative;
   z-index: 1;
 
   &__dark {
     background-color: var(--dark-color);
+  }
+  &__teal {
+    background-color: var(--teal);
   }
 }
 

@@ -22,6 +22,9 @@
 @import "components-css/_button18.scss";
 @import "components-css/_button19.scss";
 @import "components-css/_button20.scss";
+@import "components-css/_button21.scss";
+@import "components-css/_button22.scss";
+@import "components-css/_button23.scss";
 
 :root {
   --dark-color: #071952;
@@ -30,6 +33,7 @@
   --light-teal: #97feed;
   --red: #f44336;
   --blue: #00aeff;
+  --grey: #777;
 }
 
 * {
@@ -41,6 +45,9 @@
 
 body {
   background-color: var(--dark-teal);
+}
+a {
+  text-decoration: none;
 }
 
 .container {
